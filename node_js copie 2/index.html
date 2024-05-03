@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <section>
+        <div class="sidenav" id="mySidenav">
+        <a href="index.html">Accueil</a>
+        <a href="perso.html">Cartes</a>
+        <a href="./fronte/login.html">Connexion</a>
+        <a href="profil.html">Profil</a>
+    </div>
+    <div class="main-content">
+        <button class="open-btn" onclick="openNav()">☰</button>
+    </div>
+        <script src="./js/app.js"></script>
+        
+      </section>
+      <section>
+        <nav>
+          <span class="logo">
+            <img
+              src="Assets/images/harrylogo.png"
+              alt="harrylogo"
+              width="200"
+            />
+          </span>
+          <ul>
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="personnages.html">Personnages</a>
+            </li>
+            <li>
+              <a href="hogwartsLegacy.html">Hogwarts Legacy</a>
+            </li>
+            <li>
+              <a href="perso.html">Cartes</a>
+            </li>
+             <li>
+              <a href="./fronte/login.html">Connexion</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="swiper">
+        <div class="swiper mon-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-cd">
+              <p class="subtitle">Harry Potter</p>
+              <p class="title">Le crie</p>
+            </div>
+            <div class="swiper-slide slide-cdi">
+              <p class="subtitle">Harry Potter</p>
+              <p class="title">Jeu de cartes</p>
+            </div>
+            <div class="swiper-slide slide-3d">
+              <p class="subtitle">Harry Potter</p>
+              <p class="title">Saga</p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="tabs">
+        <div class="tabs">
+          <li class="tab tab-active" onclick="changeTab(event, 'tab1')">
+            Synopsis
+          </li>
+          <li class="tab" onclick="changeTab(event, 'tab2')">L'impact</li>
+          <li class="tab" onclick="changeTab(event, 'tab3')">Formulaire</li>
+        </div>
+        <div id="tab1" class="content content-active">
+          <h2>Synopsis</h2>
+          <p>
+            Harry Potter : Une explication complète Synopsis: Harry Potter est
+            une série de romans fantastiques écrits par J.K. Rowling. L'histoire
+            suit les aventures d'un jeune sorcier, Harry Potter, et de ses amis
+            Ron Weasley et Hermione Granger, à l'école de sorcellerie Poudlard.
+            Ils apprennent la magie et combattent les forces du mal, menées par
+            le Seigneur des Ténèbres Lord Voldemort.
+          </p>
+        </div>
+        <div id="tab2" class="content">
+          <h2>L'impact</h2>
+          <p>
+            Harry Potter est l'une des séries de livres les plus populaires de
+            tous les temps. Elle a été traduite en 80 langues et a vendu plus de
+            500 millions d'exemplaires. La série a également été adaptée en une
+            série de films à succès. Harry Potter est une saga qui a marqué des
+            générations de lecteurs. Elle continue d'inspirer et de divertir les
+            fans de tous âges.
+          </p>
+        </div>
+        <div id="tab3" class="content">
+          <h2>Formulaire d'inscriptions à la newsletter</h2>
+             <div class="message-error">
+      <ul></ul>
+    </div>
+    <div class="message-success">Formulaire envoyé avec succès !</div>
+    <form action="" method="post" enctype="multipart/form-data">
+      <div>
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" placeholder="pseudo" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email" />
+      </div>
+      <div>
+        <label for="password">Mot de passe </label>
+        <input type="password" id="password" placeholder="password" />
+      </div>
+      <div>
+        <label for="password2">Confimation du mot de passe</label>
+        <input type="password" id="password2" placeholder="password2" />
+      </div>
+      <button type="submit">S'inscrire à la Newsletter sur Harry Potter</button>
+    </form>
+
+          </nav>
+        </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="main.js"></script>
+    </header>
+    <main>
+      <section class="lore">
+        <article>
+          <h2>Le Survivant</h2>
+          <p>
+            Dans la paisible banlieue de Little Whinging, Surrey, un bébé nommé
+            Harry Potter change à son insu le destin du monde des sorciers. Il
+            survit à un sortilège de mort, lui conférant sa célèbre cicatrice en
+            forme d'éclair et le surnom de "Survivant".
+          </p>
+        </article>
+        <article id="histoire">
+          <h3>Poudlard, l’École de Sorcellerie</h3>
+          <p>
+            À l'âge de onze ans, Harry découvre son héritage magique et intègre
+            Poudlard. Cette école ancienne devient son passage vers un monde
+            rempli de magie, de potions et d'amitiés indéfectibles, notamment
+            avec Hermione Granger et Ron Weasley.
+          </p>
+        </article>
+        <article>
+          <h3>Les Forces des Ténèbres</h3>
+          <p>
+            Une ombre plane sur le nouveau monde de Harry alors que le mage
+            noir, Lord Voldemort, qui a autrefois cherché à le détruire,
+            commence à reprendre des forces. Le passé, le présent et le futur de
+            Harry s'entremêlent avec les sombres desseins de celui qui cherche à
+            reconquérir le pouvoir.
+          </p>
+        </article>
+        <article>
+          <h3>Les Épreuves du Tournoi des Trois Sorciers</h3>
+          <p>
+            Harry affronte une série de défis périlleux lors du Tournoi des
+            Trois Sorciers, luttant contre des dragons et sauvant des amis. Ces
+            épreuves mettent à l'épreuve son courage et le préparent aux combats
+            plus redoutables à venir.
+          </p>
+        </article>
+        <article>
+          <h3>L’Armée de Dumbledore</h3>
+          <p>
+            Animé par la résistance et la nécessité de se défendre contre les
+            forces obscures, Harry forme l'Armée de Dumbledore. Avec ses amis,
+            il enseigne à ses camarades les sortilèges et le courage nécessaires
+            dans les temps sombres à venir.
+          </p>
+        </article>
+        <article>
+          <h3>La Chasse aux Horcruxes</h3>
+          <p>
+            Harry se lance dans une quête dangereuse pour trouver et détruire
+            les Horcruxes de Voldemort, le secret de son immortalité. Chaque
+            découverte de Horcruxe le rapproche de l'affrontement final.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <ul class="droits">
+        <li>
+          <a href="index.html">ACCEUIL</a>
+        </li>
+        <li>
+          <a href="hogwartsLegacy.html">HOGWARTS LEGACY </a>
+        </li>
+        <li>
+          <a href="personnages.html">PERSONNAGES</a>
+        </li>
+        <li>
+          <a href="perso.html">CARTES</a>
+        </li>
+      </ul>
+      <div>
+        <p>&copy; Tous droits réservés</p>
+        <p>Site créé par Nassim Potter</p>
+      </div>
+       <button class="dark-mode-toggle">Mode sombre</button>
+    </footer>
+  </body>
+</html>

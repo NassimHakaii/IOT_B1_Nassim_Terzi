@@ -1,0 +1,140 @@
+/* Mobile version */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../images/hogwarts_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(136, 136, 158, 0.15);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: rgba(60, 70, 100, 0.25);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 30px 34px;
+  display: block;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10vw;
+  text-align: justify;
+}
+main article {
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(136, 136, 158, 0.15);
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+}
+
+footer li {
+  list-style: none;
+  padding: 1px 10px;
+  text-align: center;
+}
+
+footer li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Desktop version */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/hogwarts.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  nav ul li {
+    margin: 0 5px;
+    a {
+      color: white;
+    }
+    a:hover {
+      background-color: rgba(60, 70, 100, 0.75);
+    }
+  }
+  main {
+    flex-direction: row;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+}
+
+.console {
+  display: flex;
+  font-family: monospace;
+  align-content: center;
+  margin-left: 0px;
+}
+.ps5 {
+  margin-top: 75px;
+  transition: 10s;
+}
+.ps5 :hover {
+  transform: scale(1.1);
+  border-radius: 30px;
+}
+.xbox {
+  margin-right: -100px;
+  transition: 10s;
+}
+.xbox :hover {
+  transform: scale(1.1);
+  filter: brightness(90%);
+  border-radius: 30px;
+}
+.steam {
+  margin-right: -100px;
+  margin-top: 75px;
+  transition: 10s;
+}
+.steam :hover {
+  transform: scale(1.1);
+  border-radius: 30px;
+}

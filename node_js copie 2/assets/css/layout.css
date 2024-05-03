@@ -1,0 +1,107 @@
+@import url("global.css");
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+li a {
+  font-size: 1rem;
+  color: var(--color-secondary);
+  transition: color 0.5s ease-in;
+}
+
+li a:hover {
+  color: var(--color-secondary-hover);
+  transition: color 0.3s ease-in;
+}
+
+.menu_icon {
+  display: none;
+  cursor: pointer;
+  color: var(--color-secondary);
+  font-size: 1.5rem;;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, 0.55);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.overlay.active {
+  display: flex;
+  flex-direction: column;;
+}
+
+.overlay_content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: fit-content;
+}
+
+.overlay li a {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  transition: color 0.5s ease-in;
+}
+
+.overlay li a:hover {
+  color: var(--color-secondary-hover);
+  transition: color 0.3s ease-in;
+}
+
+.close_icon {
+  display: none;
+  position: fixed;
+  top: 1.5rem;
+  right: 2.5rem;
+  color: var(--color-secondary);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+
+  .close-icon {
+    display: block;
+  }
+}

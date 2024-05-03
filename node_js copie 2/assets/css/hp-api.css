@@ -1,0 +1,156 @@
+/* Mobile version */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body.character {
+  background-image: url("../images/hogwarts_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+}
+
+header {
+  background-color: rgba(136, 136, 158, 0.15);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: rgba(60, 70, 100, 0.25);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 30px 34px;
+  display: block;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10vw;
+  text-align: justify;
+}
+main article {
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(136, 136, 158, 0.15);
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+}
+
+footer li {
+  list-style: none;
+  padding: 1px 10px;
+  text-align: center;
+}
+
+footer li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Desktop version */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/hogwarts.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  body .hp.js {
+    width: 30%;
+    column-gap: 5rem;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+    a {
+      color: white;
+    }
+    a:hover {
+      background-color: rgba(60, 70, 100, 0.75);
+    }
+  }
+  main {
+    flex-direction: row;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+}
+.p.javascript {
+  color: whitesmoke;
+}
+.character {
+  margin-right: 2%;
+  margin-left: 2%;
+  float: left;
+  font-size: 0.8em;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  text-align: center;
+  padding-left: 5vh;
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+  h4 {
+    padding: 5% 0;
+  }
+}
+
+.character:nth-child(2n + 1) {
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  margin-left: auto;
+}
+
+.character h2 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.character .img {
+  width: 100%;
+  height: auto;
+}
+.character:nth-child(2n + 1) img {
+  border-radius: 5px;
+}
+.div #character {
+  width: 40% !important;
+}

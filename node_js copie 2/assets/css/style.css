@@ -1,0 +1,318 @@
+/* Mobile version */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../images/hogwarts_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  background-color: rgba(136, 136, 158, 0.15);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: rgba(60, 70, 100, 0.25);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 30px 34px;
+  display: block;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10vw;
+  text-align: justify;
+}
+main article {
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(136, 136, 158, 0.15);
+  width: 100%;
+  bottom: 0;
+}
+
+footer li {
+  list-style: none;
+  padding: 1px 10px;
+  text-align: center;
+}
+
+footer li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Desktop version */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/hogwarts.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  nav ul li {
+    margin: 0 5px;
+    a {
+      color: white;
+    }
+    a:hover {
+      background-color: rgba(60, 70, 100, 0.75);
+    }
+  }
+  main {
+    flex-direction: row;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+}
+.lore {
+  font-size: 1.4rem;
+  color: aliceblue;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.tab {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-right: 5px;
+}
+.tab:hover {
+  background-color: #ddd;
+}
+.tab-active {
+  background-color: #ccc;
+}
+.content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.content-active {
+  display: block;
+}
+
+.swiper {
+  height: 50vw;
+  width: 100%;
+  display: flex;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 72px;
+  color: white;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  font-size: 24px;
+  color: white;
+}
+.slide-cd {
+  background-image: url("../images/crieharry.jpg");
+  background-size: cover;
+}
+
+.slide-3d {
+  background-image: url("../images/jeudecartes.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+.slide-cdi {
+  background-image: url("../images/film.webp");
+  background-size: cover;
+  animation: flip 5s infinite linear;
+}
+
+.body form {
+  width: 80%;
+  margin: 80px auto;
+}
+form {
+  border: 1px solid rgba(153, 153, 153, 0.6);
+}
+form > div {
+  margin: 30px 20px;
+}
+label {
+  display: block;
+  margin-bottom: 0px;
+}
+input {
+  height: 20px;
+  width: 40%;
+}
+button {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+.message-error {
+  border: 1px solid rgb(212, 42, 0);
+  color: rgba(212, 42, 0);
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+.message-error.visible {
+  display: block;
+}
+.message-succes {
+  border: 1px solid rgb(81, 150, 2);
+  color: rgba(81, 150, 2);
+  background-color: rgba(81, 150, 2, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+.message-succes.visible {
+  display: block;
+}
+.success {
+  border: 1px solid rgb(81, 150, 2);
+  background-color: rgba(81, 150, 2, 0.4);
+}
+
+body.dark {
+  background-color: #fff;
+  color: #222;
+}
+
+body.dark p {
+  color: #222;
+}
+.dark a {
+  color: #222;
+}
+.dark h1 {
+  color: #222;
+}
+.dark h2 {
+  color: #222;
+}
+.dark h3 {
+  color: #222;
+}
+body.dark .dark-mode-toggle {
+  float: right;
+  font-size: 1em;
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main-content {
+    transition: margin-left 0.5s;
+}
+
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/* Ajoute le style pour le bouton favori */
+.card_favorite_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card_favorite_button i {
+    color: #ccc;
+    font-size: 24px;
+}
+
+.card_favorite_button.active i {
+    color: red; /* Couleur du cœur lorsque le favori est activé */
+}
+

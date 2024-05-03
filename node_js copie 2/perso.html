@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+    <link
+      rel="stylesheet"
+      href="assets/css/gallery.css"
+      <meta
+      name="description"
+      content=""
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+  <header>
+      <section>
+        <nav>
+          <span class="logo">
+            <img
+              src="Assets/images/harrylogo.png"
+              alt="harrylogo"
+              width="200"
+            />
+          </span>
+          <ul>
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="personnages.html"
+                >Personnages</a
+              >
+            </li>
+            <li>
+              <a href="hogwartsLegacy.html"
+                >Hogwarts Legacy</a
+              >
+            </li>
+            <li>
+              <a href="perso.html">Cartes</a>
+            </li>
+           <li>
+              <a href="./fronte/login.html">Connexion</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+
+
+    <main>
+      <section id="cards">
+        <div class="cards_container">
+          <div class="cards_container_filter">
+            <div class="filter-button" id="filterType">
+              <button data-house="Tous" class="select" id="BtnAll">Tous</button>
+              <button data-house="Gryffindor" id="BtnGryff">Gryffondor</button>
+              <button data-house="Hufflepuff" id="BtnPouff">
+                Poufsouffle
+              </button>
+              <button data-house="Ravenclaw" id="BtnSerdaigle">Serdaigle</button>
+              <button data-house="Slytherin" id="BtnSerpen">Serpentard</button>
+            </div>
+          </div>
+          <div class="cards_container_gallery">
+               <div class="card" id="BtnGryff" data-house="Gryffindor">
+        
+        <button class="favorite-btn card_favorite_button" onclick="toggleFavorite(this)">
+            <i class="fas fa-heart"></i> <!-- Utilisation de Font Awesome pour l'icône coeur -->
+        </button>
+    </div>
+     <div class="card" data-id="BtnPouff" data-house="Hufflepuff">
+        
+        <button class="favorite-btn card_favorite_button" onclick="toggleFavorite(this)">
+            <i class="fas fa-heart"></i> <!-- Utilisation de Font Awesome pour l'icône coeur -->
+        </button>
+    </div>
+    <div class="card" id="BtnSerdaigle" data-house="Ravenclaw">
+        
+        <button class="favorite-btn card_favorite_button" onclick="toggleFavorite(this)">
+            <i class="fas fa-heart"></i> <!-- Utilisation de Font Awesome pour l'icône coeur -->
+        </button>
+    </div>
+    <div class="card" id="BtnSerpen" data-house="Slytherin">
+        
+        <button class="favorite-btn card_favorite_button" onclick="toggleFavorite(this)">
+            <i class="fas fa-heart"></i> <!-- Utilisation de Font Awesome pour l'icône coeur -->
+        </button>
+    </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="api/getCards.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="hp.js"></script>
+  </body>
+</html>
